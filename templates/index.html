@@ -1,0 +1,12 @@
+{%  extends "base.html" %}
+{% block login_info %}Logged as {{ logged_as }}{% endblock %}
+{% block list %}
+    {% if button_mode=='repos' %}
+        List of repositories of user {{ username }}:</br>
+    {% elif button_mode=='languages' %}
+        Percentage of languages in repositories of user {{ username }}:</br>
+    {% endif %}
+    {% for item in list_repos %}
+        {{ item }}<br>
+    {% endfor %}
+{% endblock %}
