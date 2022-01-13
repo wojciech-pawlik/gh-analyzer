@@ -14,14 +14,14 @@ python -m virtualenv venv
 
 1.3.1 (linux/mac) Activate venv, install the requirements using [pip](https://pip.pypa.io/en/stable/getting-started/) and set environmental variable FLASK_APP:
 ```shell
-\venv\Scripts\activate.bat
+source venv/bin/activate
 pip install -r requirements.txt
 export FLASK_APP=run.py
 ```
 
 1.3.2 (windows) Activate venv, install the requirements using [pip](https://pip.pypa.io/en/stable/getting-started/) and set environmental variable FLASK_APP:
 ```shell
-source venv/bin/activate
+\venv\Scripts\activate.bat
 pip install -r requirements.txt
 export FLASK_APP=run.py
 ```
